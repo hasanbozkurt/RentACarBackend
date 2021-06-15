@@ -15,12 +15,12 @@ namespace DataAccess.Concrete.InMemory
         public InMemoryCarDal()
         {
             _cars = new List<Car> {
-                new Car{Id=1, BrandId=1, ColorId=1, DailyPrice=250, ModelYear=2018, Description="Sembol"},
-                new Car{Id=2, BrandId=1, ColorId=1, DailyPrice=350, ModelYear=2019, Description="Doblo"},
-                new Car{Id=3, BrandId=2, ColorId=2, DailyPrice=500, ModelYear=2017, Description="Passat"},
-                new Car{Id=4, BrandId=2, ColorId=2, DailyPrice=600, ModelYear=2020, Description="Tiguan"},
-                new Car{Id=5, BrandId=3, ColorId=2, DailyPrice=700, ModelYear=2016, Description="İ3"},
-                new Car{Id=6, BrandId=3, ColorId=3, DailyPrice=950, ModelYear=2021, Description="X6"},
+                new Car{CarName="Renault", Id=1, BrandId=1, ColorId=1, DailyPrice=250, ModelYear=2018, Description="Sembol"},
+                new Car{CarName="Fiat",Id=2, BrandId=1, ColorId=1, DailyPrice=350, ModelYear=2019, Description="Doblo"},
+                new Car{CarName="Wolsvagen",Id=3, BrandId=2, ColorId=2, DailyPrice=500, ModelYear=2017, Description="Passat"},
+                new Car{CarName="Wolsvagen",Id=4, BrandId=2, ColorId=2, DailyPrice=600, ModelYear=2020, Description="Tiguan"},
+                new Car{CarName="BMW",Id=5, BrandId=3, ColorId=2, DailyPrice=700, ModelYear=2016, Description="İ3"},
+                new Car{CarName="BMW",Id=6, BrandId=3, ColorId=3, DailyPrice=950, ModelYear=2021, Description="X6"},
 
             };
         }
@@ -59,6 +59,8 @@ namespace DataAccess.Concrete.InMemory
         {
             throw new NotImplementedException();
         }
+
+        
 
         public void Uptade(Car car)
         {
